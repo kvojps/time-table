@@ -2,29 +2,8 @@ from model.time_scheduler import Timeslot, Lesson, TimeTable
 from datetime import time
 
 
-def generate_problem():
-    timeslot_list = [
-        Timeslot(1, "MONDAY", time(hour=8, minute=30),
-                 time(hour=9, minute=30)),
-        Timeslot(2, "MONDAY", time(hour=9, minute=30),
-                 time(hour=10, minute=30)),
-        Timeslot(3, "MONDAY", time(hour=10, minute=30),
-                 time(hour=11, minute=30)),
-        Timeslot(4, "MONDAY", time(hour=13, minute=30),
-                 time(hour=14, minute=30)),
-        Timeslot(5, "MONDAY", time(hour=14, minute=30),
-                 time(hour=15, minute=30)),
-        Timeslot(6, "TUESDAY", time(hour=8, minute=30),
-                 time(hour=9, minute=30)),
-        Timeslot(7, "TUESDAY", time(hour=9, minute=30),
-                 time(hour=10, minute=30)),
-        Timeslot(8, "TUESDAY", time(hour=10, minute=30),
-                 time(hour=11, minute=30)),
-        Timeslot(9, "TUESDAY", time(hour=13, minute=30),
-                 time(hour=14, minute=30)),
-        Timeslot(10, "TUESDAY", time(hour=14, minute=30),
-                 time(hour=15, minute=30)),
-    ]
+def generate_problem(time_scheduler_dto):
+    timeslot_list = generate_time_slot_list(time_scheduler_dto)
     lesson_list = [
         Lesson(1, "Math", "A. Turing", "9th grade"),
         Lesson(2, "Math", "A. Turing", "9th grade"),
@@ -51,3 +30,14 @@ def generate_problem():
     lesson.set_timeslot(timeslot_list[0])
 
     return TimeTable(timeslot_list, lesson_list)
+
+
+def generate_time_slot_list(time_scheduler_dto):
+    timeslot_list = []
+    for time_slot in time_scheduler_dto["timeslot_list"]:
+        time_slot_add = Timeslot(time_slot["id"], time_slot["day_of_week"],
+                                 time(hour=time_slot["hour_start_time"], minute=time_slot["minute_start_time"]),
+                                 time(hour=time_slot["hour_end_time"], minute=time_slot["minute_end_time"]))
+        timeslot_list.append(time_slot_add)
+
+    return timeslot_list

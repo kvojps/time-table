@@ -1,5 +1,6 @@
 from model.time_scheduler import Lesson, TimeTable
 from utils.generate_problem import generate_problem
+from utils.example_dto import example_dto
 from config.constraints import define_constraints
 from optapy import get_class
 import optapy.config
@@ -14,7 +15,7 @@ solver_config = optapy.config.solver.SolverConfig() \
 
 solution = solver_factory_create(solver_config)\
     .buildSolver()\
-    .solve(generate_problem())
+    .solve(generate_problem(example_dto))
 
 path = "../temp/timetable.txt"
 try:
