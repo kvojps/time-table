@@ -1,6 +1,6 @@
 from model.time_scheduler import Lesson, TimeTable
 from utils.generate_problem import generate_problem
-from constraints import define_constraints
+from config.constraints import define_constraints
 from optapy import get_class
 import optapy.config
 from optapy.types import Duration
