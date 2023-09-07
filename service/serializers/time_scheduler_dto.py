@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import List
 
 
 class TimeSlotDTO(BaseModel):
@@ -18,5 +19,5 @@ class LessonDTO(BaseModel):
 
 
 class TimeSchedulerDTO(BaseModel):
-    timeslot_list: [TimeSlotDTO]
-    lesson_list: [LessonDTO]
+    timeslot_list: List[TimeSlotDTO]
+    lesson_list: List[LessonDTO]
