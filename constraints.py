@@ -1,4 +1,4 @@
-from domain import Lesson
+from model.time_scheduler import Lesson
 from optapy import constraint_provider, get_class
 from optapy.constraint import Joiners
 from optapy.score import HardSoftScore

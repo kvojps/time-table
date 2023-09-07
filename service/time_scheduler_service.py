@@ -1,4 +1,5 @@
-from domain import Lesson, TimeTable, generate_problem
+from model.time_scheduler import Lesson, TimeTable
+from utils.generate_problem import generate_problem
 from constraints import define_constraints
 from optapy import get_class
 import optapy.config
@@ -15,7 +16,7 @@ solution = solver_factory_create(solver_config)\
     .buildSolver()\
     .solve(generate_problem())
 
-path = "adapter/temp/timetable.txt"
+path = "../temp/timetable.txt"
 try:
     with open(path, "w") as arquivo:
         arquivo.write(str(solution))
