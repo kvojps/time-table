@@ -1,7 +1,8 @@
 from model.time_scheduler import Lesson, TimeTable
-from config.generate_problem import generate_problem
 from .serializers.time_scheduler_dto import TimeSchedulerDTO
+from config.generate_problem import generate_problem
 from config.constraints import define_constraints
+from utils.utils import create_file
 from optapy import get_class
 import optapy.config
 from optapy.types import Duration
@@ -22,14 +23,5 @@ class TimeSchedulerService:
             .buildSolver() \
             .solve(generate_problem(time_scheduler_dto))
 
-        self._create_file(solution)
+        create_file(solution)
 
-    @staticmethod
-    def _create_file(solution):
-        path = "temp/timetable.txt"
-        try:
-            with open(path, "w") as arquivo:
-                arquivo.write(str(solution))
-            print("Arquivo salvo com sucesso em:", path)
-        except Exception as e:
-            print("Ocorreu um erro ao salvar o arquivo:", str(e))
