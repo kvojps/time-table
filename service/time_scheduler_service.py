@@ -1,6 +1,6 @@
 from model.time_scheduler import Lesson, TimeTable
 from utils.generate_problem import generate_problem
-from utils.example_dto import time_scheduler_dto
+from utils.time_scheduler_example_dto import time_scheduler_dto
 from config.constraints import define_constraints
 from optapy import get_class
 import optapy.config
