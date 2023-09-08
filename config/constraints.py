@@ -3,22 +3,18 @@ from optapy import constraint_provider, get_class
 from optapy.constraint import Joiners
 from optapy.score import HardSoftScore
 
-# Constraint Factory takes Java Classes, not Python Classes
 LessonClass = get_class(Lesson)
 
 
 @constraint_provider
 def define_constraints(constraint_factory):
     return [
-        # Hard constraints
         teacher_conflict(constraint_factory),
         student_group_conflict(constraint_factory),
-        # Soft constraints are only implemented in the optapy-quickstarts code
     ]
 
 
 def teacher_conflict(constraint_factory):
-    # A teacher can teach at most one lesson at the same time.
     return constraint_factory \
         .forEach(LessonClass)\
         .join(LessonClass,
@@ -31,7 +27,6 @@ def teacher_conflict(constraint_factory):
 
 
 def student_group_conflict(constraint_factory):
-    # A student can attend at most one lesson at the same time.
     return constraint_factory \
         .forEach(LessonClass) \
         .join(LessonClass,

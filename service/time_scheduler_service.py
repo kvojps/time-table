@@ -1,5 +1,5 @@
 from model.time_scheduler import Lesson, TimeTable
-from utils.generate_problem import generate_problem
+from config.generate_problem import generate_problem
 from utils.time_scheduler_example_dto import time_scheduler_dto
 from config.constraints import define_constraints
 from optapy import get_class
