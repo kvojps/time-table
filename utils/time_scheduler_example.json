@@ -1,0 +1,235 @@
+{
+  "timeTable": {
+    "timeslot_list": [
+      {
+        "start_time": "09:30:00",
+        "end_time": "10:30:00"
+      },
+      {
+        "start_time": "10:30:00",
+        "end_time": "11:30:00"
+      },
+      {
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+      },
+      {
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+      },
+      {
+        "start_time": "08:30:00",
+        "end_time": "09:30:00"
+      },
+      {
+        "start_time": "09:30:00",
+        "end_time": "10:30:00"
+      },
+      {
+        "start_time": "10:30:00",
+        "end_time": "11:30:00"
+      },
+      {
+        "start_time": "13:30:00",
+        "end_time": "14:30:00"
+      },
+      {
+        "start_time": "14:30:00",
+        "end_time": "15:30:00"
+      }
+    ],
+    "lesson_list": [
+      {
+        "id": "1",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "08:30:00",
+        "end_time": "09:30:00",
+        "teacher": "A",
+        "subject": "Math",
+        "student_group": "9th"
+      },
+      {
+        "id": "9",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00",
+        "teacher": "M",
+        "subject": "Physics",
+        "student_group": "9th"
+      },
+      {
+        "id": "10",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00",
+        "teacher": "M",
+        "subject": "Chemistry",
+        "student_group": "9th"
+      },
+      {
+        "id": "6",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "08:30:00",
+        "end_time": "09:30:00",
+        "teacher": "C",
+        "subject": "Biology",
+        "student_group": "9th"
+      },
+      {
+        "id": "8",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "10:30:00",
+        "end_time": "11:30:00",
+        "teacher": "I",
+        "subject": "History",
+        "student_group": "9th"
+      },
+      {
+        "id": "5",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00",
+        "teacher": "I",
+        "subject": "English",
+        "student_group": "9th"
+      },
+      {
+        "id": "3",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "10:30:00",
+        "end_time": "11:30:00",
+        "teacher": "I",
+        "subject": "English",
+        "student_group": "9th"
+      },
+      {
+        "id": "2",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00",
+        "teacher": "P",
+        "subject": "Spanish",
+        "student_group": "9th"
+      },
+      {
+        "id": "7",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00",
+        "teacher": "P",
+        "subject": "Spanish",
+        "student_group": "9th"
+      },
+      {
+        "id": "2",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00",
+        "teacher": "A",
+        "subject": "Math",
+        "student_group": "10th"
+      },
+      {
+        "id": "3",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "10:30:00",
+        "end_time": "11:30:00",
+        "teacher": "A",
+        "subject": "Math",
+        "student_group": "10th"
+      },
+      {
+        "id": "9",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00",
+        "teacher": "A",
+        "subject": "Math",
+        "student_group": "10th"
+      },
+      {
+        "id": "1",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "08:30:00",
+        "end_time": "09:30:00",
+        "teacher": "M",
+        "subject": "Physics",
+        "student_group": "10th"
+      },
+      {
+        "id": "7",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "09:30:00",
+        "end_time": "10:30:00",
+        "teacher": "M",
+        "subject": "Chemistry",
+        "student_group": "10th"
+      },
+      {
+        "id": "8",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "10:30:00",
+        "end_time": "11:30:00",
+        "teacher": "M",
+        "subject": "French",
+        "student_group": "10th"
+      },
+      {
+        "id": "5",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00",
+        "teacher": "C",
+        "subject": "Geography",
+        "student_group": "10th"
+      },
+      {
+        "id": "6",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "08:30:00",
+        "end_time": "09:30:00",
+        "teacher": "I",
+        "subject": "History",
+        "student_group": "10th"
+      },
+      {
+        "id": "10",
+        "timeslot": "Timeslot",
+        "day_of_week": "TUESDAY",
+        "start_time": "14:30:00",
+        "end_time": "15:30:00",
+        "teacher": "P",
+        "subject": "English",
+        "student_group": "10th"
+      },
+      {
+        "id": "4",
+        "timeslot": "Timeslot",
+        "day_of_week": "MONDAY",
+        "start_time": "13:30:00",
+        "end_time": "14:30:00",
+        "teacher": "P",
+        "subject": "Spanish",
+        "student_group": "10th"
+      }
+    ],
+    "score": "0hard/0soft"
+  }
+}

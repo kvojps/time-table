@@ -2,7 +2,7 @@ from model.time_scheduler import Lesson, TimeTable
 from .serializers.time_scheduler_dto import TimeSchedulerDTO
 from config.generate_problem import generate_problem
 from config.constraints import define_constraints
-from utils.utils import create_file
+from utils.utils import generate_timetable_response
 from optapy import get_class
 import optapy.config
 from optapy.types import Duration
@@ -23,5 +23,4 @@ class TimeSchedulerService:
             .buildSolver() \
             .solve(generate_problem(time_scheduler_dto))
 
-        create_file(solution)
-
+        return generate_timetable_response(solution)
